@@ -1,0 +1,23 @@
+{
+  "name": "bmicalc",
+  "version": "1.0.0",
+  "description": "bmi calculator that calculates body mass index",
+  "homepage": "https://github.com/Yerbolatov/backendassignment#readme",
+  "bugs": {
+    "url": "https://github.com/Yerbolatov/backendassignment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yerbolatov/backendassignment.git"
+  },
+  "license": "ISC",
+  "author": "ali yerbolatov",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
