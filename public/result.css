@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.result-box {
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px 0;
+  border: 3px solid;
+}
+
+.bmi-value {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.category {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.input-info {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.input-info p {
+  color: #666;
+  margin: 8px 0;
+  font-size: 0.95em;
+}
+
+.input-info strong {
+  color: #333;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.button {
+  flex: 1;
+  min-width: 140px;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.button-primary {
+  background: #667eea;
+  color: white;
+}
+
+.button-secondary {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.scale {
+  margin: 30px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.scale h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.scale-bar {
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.scale-segment {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7em;
+  color: white;
+  font-weight: 600;
+}
+
+.scale-labels {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.75em;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .bmi-value {
+    font-size: 3em;
+  }
+
+  .category {
+    font-size: 1.5em;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

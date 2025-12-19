@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Result</title>
+  <link rel="stylesheet" href="/result.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Your BMI Result</h1>
+
+    <div class="input-info">
+      <p><strong>Weight:</strong> <span id="weight">{{WEIGHT}}</span> kg</p>
+      <p><strong>Height:</strong> <span id="height">{{HEIGHT}}</span> cm</p>
+    </div>
+
+    <div class="result-box" id="resultBox">
+      <div class="bmi-value" id="bmiValue">{{BMI_VALUE}}</div>
+      <div class="category" id="category">{{CATEGORY}}</div>
+    </div>
+
+    <div class="scale">
+      <h3>BMI Scale</h3>
+      <div class="scale-bar">
+        <div class="scale-segment" style="background: #3498db;">Under</div>
+        <div class="scale-segment" style="background: #2ecc71;">Normal</div>
+        <div class="scale-segment" style="background: #f39c12;">Over</div>
+        <div class="scale-segment" style="background: #e74c3c;">Obese</div>
+      </div>
+      <div class="scale-labels">
+        <span>&lt;18.5</span>
+        <span>18.5-24.9</span>
+        <span>25-29.9</span>
+        <span>≥30</span>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <a href="/" class="button button-primary">Return</a>
+    </div>
+  </div>
+</body>
+</html>
